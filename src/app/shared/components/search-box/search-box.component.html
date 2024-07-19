@@ -1,8 +1,11 @@
+<!-- (keyup.enter)="getTxtSearchInput()" -->
+
 <input
   type="text"
   [placeholder]=placeholder
   class="form-control"
   #txtSearchInput
-  (keyup.enter)="getTxtSearchInput()"
+  (keyup)="onkeyPress(txtSearchInput.value)"
+  [value]=initialValue
 >
 
